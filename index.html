@@ -7,14 +7,15 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 <link href="style.css" rel="stylesheet">
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
 </head>
  
 <body>
     <div class="container">
     <center>
+        <a href=""id="link"download="picture.png"></a>
         <h1>Voice Selfie App 
-
+<img src="creeper.jpeg"id="logo">
         </h1>
         <hr>
         <h4 style="color:red;">Please press allow as soon as popup comes. After you give a voice command</h4>
@@ -22,17 +23,17 @@
         <div class="form-group">
             <h3>Say "take my selfie"</h3>
             <label>Your voice output : </label>
-
+<textarea id="textbox"readonly="true"></textarea>
         </div>
-
+<button class="btn btn-info"onclick="start()">Start</button>
         <p>Press the Start button</p>
 
         <label>Your webcam : </label>
-
+<div id="camera"></div>
         <br>
 
         <label>Your selife Will Display Here: </label>
-
+<div id="result"></div>
     </center>
     </div>
 
